@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tupper Swipe™ - Recupera tu recipiente</title>
+  <link rel="stylesheet" href="tupper swipe.css">
+</head>
+<body>
+
+  <header>
+    <h1>Tupper Swipe™</h1>
+    <p class="tagline">Swipea tu recipiente. Recupera tu alma.</p>
+    <a href="#" class="btn">Descarga la App</a>
+  </header>
+
+  <section class="gallery">
+    <h2>¿Este tupper es tuyo?</h2>
+    <div class="tupper-grid">
+      <img src="https://m.media-amazon.com/images/I/61pFrc59zsL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="Tupper 1">
+      <img src="https://i.pinimg.com/originals/f5/73/f6/f573f693852f10a4b59e4b19ff2dfba7.jpg" alt="Tupper 2">
+      <img src="https://mercanto.mx/cdn/shop/files/f0382447-d72a-4a08-bddc-7a50ef48ee61_1.jpg?v=1736895656&width=1445" alt="Tupper 3">
+      <img src="https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00750110066203L.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Tupper 4">
+    </div>
+  </section>
+
+  <section class="testimonios">
+    <h2>Testimonios 100% reales</h2>
+    <blockquote>“Gracias a Tupper Swipe, volví a ver el tupper de mi ex. Y a ella también.” – Juan, 31</blockquote>
+    <blockquote>“Recuperé mi pote de natilla. Lloré.” – Abuela Lidia, 74</blockquote>
+  </section>
+
+  <section class="funciona">
+    <h2>¿Cómo funciona?</h2>
+    <ol>
+      <li>Sube la foto de tu tupper perdido o encontrado.</li>
+      <li>Haz swipe hasta que reconozcas tu recipiente.</li>
+      <li>¡Match! Coordinan la entrega (y el reencuentro).</li>
+    </ol>
+  </section>
+
+  <button id="funnyButton">Sube todo el volumen y presióname👀</button>
+  <audio id="funnySound" src="Gritito.mp3" preload="auto"></audio>
+
+  <footer>
+    <p>&copy; 2025 Tupper Swipe™. No nos hacemos responsables si el tupper ya huele feo.</p>
+    <p>Contacto: hola@tupperswipe.fail</p>
+  </footer>
+  
+
+  <script>
+    const button = document.getElementById('funnyButton');
+    const sound = document.getElementById('funnySound');
+  
+    button.addEventListener('click', () => {
+      sound.currentTime = 0; // Reinicia el sonido si ya se está reproduciendo
+      sound.play();
+    });
+  </script>
+  
+</body>
+</html>
